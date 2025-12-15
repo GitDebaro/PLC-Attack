@@ -22,23 +22,23 @@ wireshark
     * Write Single Coil
     * Read Coils
 
-IMG1
+<img width="1034" height="110" alt="image" src="https://github.com/user-attachments/assets/92b8eeee-1698-4858-a43d-cf62dcd374d9" />
 
 La gran mayoría de paquetes tienen el campo Data a 0, por lo que destacan una decena de paquetes que mandan 'ff00' al sistema.
 
-IMG2
+<img width="1462" height="340" alt="image" src="https://github.com/user-attachments/assets/a3d981fc-b93e-45f7-9209-e0d087aed2e4" />
 
 En esta última imagen se puede observar que la función de escritura (Write Single Coil) tiene asociado el código 5 dentro de Modbus, mientras que la función de lectura (Read Coils) recibe el código 1; como se puede ver en la siguiente imagen:
 
-IMG3
+<img width="1477" height="347" alt="image" src="https://github.com/user-attachments/assets/c173203e-8d72-470a-b53e-93c715903f36" />
 
 4. Siguiendo con la captura de la ejecución, se observa que cada vez que la caja entra el rango del robot se realizan dos Queries con los Reference Numbers 3 y 4, probablemente asociados a las secciones del PLC que detectan que la caja está en el rango efectivo del robot y activan a este último.
 
-IMG4
+<img width="1513" height="258" alt="image" src="https://github.com/user-attachments/assets/29e2040f-2981-4d13-9701-5361bf8ac2dd" />
 
 5. Finalmente, se procede a apagar el sistema. Todos los paquetes de escritura capturados contienen el campo Data a 0, por lo que se supone que este valor es el utilizado para apagar las funciones del sistema; y que hay pocos paquetes enviados con Reference Numbers 1 y 2 (entre los que se encuentran las respuestas a estos paquetes).
 
-IMG5
+<img width="1523" height="202" alt="image" src="https://github.com/user-attachments/assets/7fe42d56-a466-473e-a675-e5e658b06dc4" />
 
 ### ¿Cuál es el código de función para modificar un valor?
 Como hemos visto gracias a la captura de paquetes en Wireshark, el código de la función de escritura es 5.
