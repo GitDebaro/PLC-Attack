@@ -47,7 +47,7 @@ Como hemos visto gracias a la captura de paquetes en Wireshark, el código de la
 Obtenido de la misma forma que en el caso anterior, el código de la función de lectura es 1.
 
 ### ¿Cuál es el tipo de dato que se lee o se escribe?
-Para esta pregunta se han revisado en fuentes públicas los distintos tipos de datos con los que trabaja Modbus. Uno de ellos nos es bastante familiar ya que lo hemos visto en las funciones mencionadas anteriormente, Coils; registros de 1 bit que concuerdan con los cuatro bits encontrados en la IMG3.
+Para esta pregunta se han revisado en fuentes públicas los distintos tipos de datos con los que trabaja Modbus. Uno de ellos nos es bastante familiar ya que lo hemos visto en las funciones mencionadas anteriormente, Coils; registros de 1 bit que concuerdan con los cuatro bits encontrados en la tercera imagen.
 https://help.campbellsci.com/CR6/Content/shared/Communication/Modbus/modbus-infostorage.htm?TocPath=Communications%20protocols%7CModbus%20communications%7C_____7 
 
 ## Ejercicio 2
